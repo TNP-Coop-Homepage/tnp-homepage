@@ -1,0 +1,15 @@
+.NavigationLinkBase {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: .75rem;
+    border-radius: .75rem;
+}
+
+.NavigationLink {
+    color: var(--background-rgb);
+}
+
+.NavigationLinkSelected {
+    color: var(--primary-accent-rgb);
+    background: var(--background-rgb);
+}

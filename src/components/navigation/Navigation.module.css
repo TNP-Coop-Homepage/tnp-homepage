@@ -1,0 +1,34 @@
+.Navigation {
+    background: var(--primary-accent-rgb);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    height: 100vh;
+    width: max-content;
+    top: 0;
+    padding: 3rem;
+    color: var(--background-rgb);
+}
+
+.NavigationTop {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.Logo {
+    width: 14rem;
+}
+
+.LogoImage {
+    width: 100%;
+    height: auto;
+}
+
+.Links {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
