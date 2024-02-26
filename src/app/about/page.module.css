@@ -19,6 +19,14 @@
     white-space: pre-wrap;
 }
 
+.ParagraphMargin{
+    margin-bottom: 1rem;
+}
+
+.UnorderedList{
+    padding-left: 1%;
+}
+
 .HorizontalLine{
     width: 99%;
     position: relative; left: 0.5%;
