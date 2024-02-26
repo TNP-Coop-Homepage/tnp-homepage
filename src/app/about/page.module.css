@@ -1,19 +1,25 @@
+.About{
+    padding: 1%;
+}
+
 .AboutTitle{
-    color: #000;
-}
-
-.IndexHeader{
-    color: #000;
-}
-
-.IndexText{
-    color: #000;
+    font-size: 3rem;
 }
 
 .BodyHeader{
-    color: #000;
+    font-size: 1.5rem;
+}
+
+.BodySubHeader{
+    font-size: 1.3rem;
 }
 
 .BodyText{
-    color: #000;
+    font-size: 1rem;
+    white-space: pre-wrap;
+}
+
+.HorizontalLine{
+    width: 99%;
+    position: relative; left: 0.5%;
 }
