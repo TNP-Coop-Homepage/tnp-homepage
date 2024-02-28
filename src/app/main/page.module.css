@@ -10,12 +10,12 @@
     height: 200px;
     /*この下はあまり変更しないで*/
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.2) inset;
     margin:0 auto;
 }
 .text_header{
-    object-position: center bottom;
+    margin-left: 20px;
     color:white;
     font-size: x-large;
     
