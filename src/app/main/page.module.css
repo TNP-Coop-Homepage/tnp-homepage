@@ -15,8 +15,7 @@
     margin:0 auto;
 }
 .text_header{
-    position: absolute;
-    left: 20%;
+    object-position: center bottom;
     color:white;
     font-size: x-large;
     
