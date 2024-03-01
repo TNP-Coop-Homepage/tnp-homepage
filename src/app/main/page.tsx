@@ -4,8 +4,8 @@ export default async function Home() {
                 <header className={styles.header}><span className={styles.text_header}>秋田大学プログラミングサークル</span></header>
                 <main className={styles.main}>
                     <h1 className={styles.hs}>ようこそ</h1>
-                    <p>
-                        『秋田大学プログラミングサークルTNP』は秋田大学公認のプログラミング&創作サークルです。
+                    <p className={styles.p_first}>
+                        <strong>『秋田大学プログラミングサークルTNP』</strong>は秋田大学公認のプログラミング&創作サークルです。
                     </p>
                     <h2 className={styles.hs}>TL;DR: どんなサークル？</h2>
                     <ul>
@@ -55,18 +55,22 @@ export default async function Home() {
                         ここまでお読みいただきありがとうございました。少しでもTNPに興味を持っていただければ幸いです。
                     </p>
                     <p>
+                        <div>
                         TNPは少し個性の強いオタクがかなり多いですが、とてもアットホームな場所で、きっと似たような趣味やプログラミングを行っている人がいると思います。
-                    </p>
+                        </div>
                     {/*リンクを載せる*/}
-                    <p>
+                        <div>
                         今までのメンバーの創作物や活動実績は 「About」ページで確認したり、「GameCenter」ページで遊んだりすることができます。
+                        </div>
                     </p>
                     <p>
+                        <div>
                         活動見学はいつでも大歓迎です！ぜひいつでもいらしてください。
-                    </p>
+                        </div>
                     {/*リンクを載せる*/}
-                    <p>
+                        <div>
                         何か質問などがございましたら、「Contact」よりご連絡ください。
+                        </div> 
                     </p>
                 </main>
             </div>
