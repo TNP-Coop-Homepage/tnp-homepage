@@ -1,0 +1,21 @@
+.RootWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.RootWrapper > * {
+    margin: 0 0.5rem;
+}
+
+.Icon {
+    flex-basis: 128px;
+    flex-shrink: 0;
+    width: 128px;
+    height: 128px;
+}
+
+.TextAreaWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

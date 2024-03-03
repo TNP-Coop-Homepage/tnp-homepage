@@ -1,0 +1,20 @@
+.RootWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.PersonaAreaWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.TextAreaWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.DisplayName {
+    align-self: center;
+}
