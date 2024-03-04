@@ -4,6 +4,7 @@ export type Persona = {
     iconSrc: string;
     primaryColor: string;
     secondaryColor: string | null;
+    backgroundColor: string;
     socialLinks: {
         gitHub: string | null;
         // ...
