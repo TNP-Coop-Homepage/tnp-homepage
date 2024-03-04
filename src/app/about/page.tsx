@@ -3,11 +3,11 @@ export default function About() {
     return (
     <div className={styles.About}>
         <title>{"About"}</title>
-        <h1 className={styles.AboutTitle}>About</h1>
+        <h1 className={styles.Header}>About</h1>
         <hr className={styles.HorizontalLine}></hr><br />
         <div className={styles.BodyText}>
             <div className={styles.ParagraphMargin}>
-                <h2 className={styles.BodyHeader}>TNPへようこそ</h2>
+                <h2 className={styles.Header}>TNPへようこそ</h2>
                 <hr className={styles.HorizontalLine}></hr>
                 <p>
                     「秋田大学プログラミングサークルTNP」は秋田大学公認サークルです。
@@ -32,7 +32,7 @@ export default function About() {
                 </p>
             </div>
             <div className={styles.ParagraphMargin}>
-                <h2 className={styles.BodyHeader}>活動内容</h2>
+                <h2 className={styles.Header}>活動内容</h2>
                 <hr className={styles.HorizontalLine}></hr>
                 <ul className={styles.UnorderedList}>
                     <li>制作したゲームをコミックマーケットに出品(8月、12月)</li>
@@ -44,7 +44,7 @@ export default function About() {
                 </ul>
             </div>
             <div className={styles.ParagraphMargin}>
-                <h2 className={styles.BodyHeader}>活動時間</h2>
+                <h2 className={styles.Header}>活動時間</h2>
                 <hr className={styles.HorizontalLine}></hr>
                 <p>
                     TNPは、毎週水曜日と金曜日の17:00～18:30に「サークル棟部室」の2階で活動しています。
@@ -55,7 +55,7 @@ export default function About() {
                 </p>
             </div>
             <div className={styles.ParagraphMargin}>
-                <h2 className={styles.BodyHeader}>イベント</h2>
+                <h2 className={styles.Header}>イベント</h2>
                 <hr className={styles.HorizontalLine}></hr>
                 <h3 className={styles.BodySubHeader}>4月</h3>
                 <p>
@@ -92,7 +92,7 @@ export default function About() {
                     「秋大祭」
                 </p>
                 <p>
-                    秋大祭(いわゆる大学祭)では、自作ゲームの展示を行っています。TNPではゲームの展示や試遊会を行い、毎年多くの地域の方々に遊んでいただいています。また、多くのサークルが個々の活動を発表します。また、秋大祭が終わったら打ち上げとしてみんなで飲みに行きます。
+                    秋大祭(いわゆる大学祭)では、ゲームの展示や試遊会を行い、毎年多くの地域の方々に遊んでいただいています。また、秋大祭が終わったら打ち上げとしてみんなで飲みに行きます。
                 </p>
                 <h3 className={styles.BodySubHeader}>12月</h3>
                 <p>
@@ -110,7 +110,7 @@ export default function About() {
                 </p>
                 <h3 className={styles.BodySubHeader}>不定期開催</h3>
                 <p>
-                    TNPでは、その他にも成員同士の交流または成員のプログラミング技術向上を目的として活動時間外に集まって、作業したり遊んだりすることがあります。主に活動日の活動後や休日に行うことが多いです。
+                    TNPでは、その他にもメンバー同士の交流またはメンバーのプログラミング技術向上を目的として活動時間外に集まって、作業したり遊んだりすることがあります。主に活動日の活動後や休日に行うことが多いです。
                 </p>
                 <ul className={styles.UnorderedList}>
                     <li>ゲームジャム(プログラミングの勉強会)-&gt;1日という短期間でゲームのプロトタイプを作り、メンバー内で交流します。</li>
@@ -121,10 +121,10 @@ export default function About() {
                 </ul>
             </div>
             <div className={styles.ParagraphMargin}>
-                <h2 className={styles.BodyHeader}>Welcome!</h2>
+                <h2 className={styles.Header}>Welcome!</h2>
                 <hr className={styles.HorizontalLine}></hr>
                 <p>
-                    TNPはいつでもプログラミングや、制作活動に興味がある人をいつでも募集しています。
+                    TNPはプログラミングや制作活動に興味がある人をいつでも募集しています。
                 </p>
                 <p>
                 いつでも見学・加入を歓迎していますので、ご質問がございましたら、「Contact」ページのお問い合わせフォームにてお問い合わせください！

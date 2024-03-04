@@ -1,12 +1,20 @@
 .About{
-    padding: 1%;
+    background-color: rgb(249, 249, 249);
+    padding: 2%;
+    max-width: 80rem;
+    margin:auto;
 }
 
-.AboutTitle{
+.Header{
+    border-left: 0.5rem solid green;
+    padding-left: 0.5rem;
+}
+
+.Header h1{
     font-size: 3rem;
 }
 
-.BodyHeader{
+.Header h2{
     font-size: 1.5rem;
 }
 
@@ -19,15 +27,21 @@
     white-space: pre-wrap;
 }
 
+.BodyText p{
+    margin-left: 1rem;
+}
+
 .ParagraphMargin{
     margin-bottom: 1rem;
 }
 
 .UnorderedList{
-    padding-left: 1%;
+    padding-left: 1.2rem;
+    margin-left: 1rem;
 }
 
 .HorizontalLine{
-    width: 99%;
+    width: 98%;
     position: relative; left: 0.5%;
+    margin-left: 1%;
 }
