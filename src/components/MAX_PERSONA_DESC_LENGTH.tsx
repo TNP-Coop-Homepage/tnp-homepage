@@ -1,3 +1,3 @@
 // TODO: こういう定数、どこかのファイルにまとめたい
 
-export const maxPersonaDescriptionLength = 30;
+export const MAX_PERSONA_DESC_LENGTH = 30;
