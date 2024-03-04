@@ -1,0 +1,15 @@
+.Icon {
+    flex-basis: 128px;
+    flex-shrink: 0;
+    width: 128px;
+    height: 128px;
+    padding: .3rem;
+    border-radius: 10%;
+
+    box-shadow: 0 0 .8rem 1px var(--primaryColor);
+    box-sizing: border-box;
+}
+
+.RootWrapper > * {
+    margin: 0 0.5rem;
+}
