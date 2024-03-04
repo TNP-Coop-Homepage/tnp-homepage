@@ -1,8 +1,11 @@
 .About{
-    background-color: rgb(249, 249, 249);
     padding: 2%;
     max-width: 80rem;
     margin:auto;
+}
+
+.Background{
+    background-color: rgb(249, 249, 249);
 }
 
 .Header{
