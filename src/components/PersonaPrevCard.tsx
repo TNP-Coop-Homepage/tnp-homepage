@@ -2,7 +2,7 @@ import React from "react";
 import {Persona} from "@/types/Persona";
 import styles from "./PersonaPrevCard.module.css";
 import personaStyles from "./PersonaShared.module.css";
-import {MAX_PERSONA_DESC_LENGTH} from "@/components/MAX_PERSONA_DESC_LENGTH";
+import {MAX_PERSONA_BANNER_LENGTH, MAX_PERSONA_DESC_LENGTH} from "@/components/MAX_PERSONA_DESC_LENGTH";
 
 export default function PersonaPrevCard(persona: Persona) {
     return (
@@ -10,7 +10,7 @@ export default function PersonaPrevCard(persona: Persona) {
             <img src={persona.iconSrc} alt={persona.displayName} className={`${styles.Icon} ${personaStyles.Icon}`} width={128} height={128}/>
             <div className={styles.TextAreaWrapper}>
                 <h2>{persona.displayName}</h2>
-                <p>{persona.description.length > 30 ? persona.description.substring(0, MAX_PERSONA_DESC_LENGTH-1) + "…" : persona.description}</p>
+                <p>{persona.description.length > MAX_PERSONA_DESC_LENGTH ? persona.description.substring(0, MAX_PERSONA_DESC_LENGTH-1) + "…" : persona.description}</p>
             </div>
         </main>
     )
