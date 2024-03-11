@@ -1,6 +1,10 @@
 .RootWrapper {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    background-color: var(--backgroundColor);
+    padding: 1rem;
+    border-radius: 0.6rem;
 }
 
 .RootWrapper > * {
