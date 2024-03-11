@@ -1,11 +1,19 @@
+"use client";
+
 import Iframe from "react-iframe"
 import styles from "./page.module.css"
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import path from "path";
 
 export default function About() {
+
+    const pathname = usePathname()
+
     return (
         <div className={styles.Background}>
             <header className={styles.HeaderImage}><span className={styles.HeaderImageText}>秋田大学プログラミングサークル</span></header>
-            <div className={styles.About}>
+            <main className={styles.About}>
                 <title>{"About"}</title>
                 <h1 className={styles.Header}>About</h1>
                 <hr className={styles.HorizontalLine}></hr><br />
@@ -144,11 +152,13 @@ export default function About() {
                             TNPはプログラミングや制作活動に興味がある人をいつでも募集しています。
                         </p>
                         <p>
-                            いつでも見学・加入を歓迎していますので、ご質問がございましたら、「Contact」ページのお問い合わせフォームにてお問い合わせください！
+                            いつでも見学・加入を歓迎していますので、ご質問がございましたら、「
+                            <Link className={`${styles.LinkText}`} href={"/contact"}>contact
+    </Link>」ページのお問い合わせフォームにてお問い合わせください！
                         </p>
                     </div>
                 </div>
-            </div>
+            </main>
         </div>
     )
 }
