@@ -1,11 +1,29 @@
 .About{
     padding: 2%;
     max-width: 80rem;
-    margin:auto;
+    margin: 0;
 }
 
 .Background{
     background-color: rgb(249, 249, 249);
+}
+
+.HeaderImage{
+    background-image: none;
+    background-color: aliceblue;
+    /*あとでヘッダー画像をここにつける*/
+    height: 50vh;
+    /*この下はあまり変更しないで*/
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.2) inset;
+    margin:0 auto;
+}
+
+.HeaderImageText{
+    width: 100vw;
+    font-size: 1rem;
+    white-space: pre-wrap;
 }
 
 .Header{
@@ -41,6 +59,11 @@
 .UnorderedList{
     padding-left: 1.2rem;
     margin-left: 1rem;
+}
+
+.MapImage{
+    width: 50%;
+    height: auto;
 }
 
 .HorizontalLine{

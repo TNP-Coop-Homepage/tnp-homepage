@@ -4,6 +4,7 @@ import styles from "./page.module.css"
 export default function About() {
     return (
         <div className={styles.Background}>
+            <header className={styles.HeaderImage}><span className={styles.HeaderImageText}>秋田大学プログラミングサークル</span></header>
             <div className={styles.About}>
                 <title>{"About"}</title>
                 <h1 className={styles.Header}>About</h1>
@@ -54,12 +55,17 @@ export default function About() {
                         </p>
                         <p>
                             <Iframe url={"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d322.5534641710882!2d140.13480373670654!3d39.724757162846565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8fc298e534e24d%3A0xd57758679f66e202!2z44CSMDEwLTA4NTIg56eL55Sw55yM56eL55Sw5biC5omL5b2i5a2m5ZyS55S677yRIOOCteODvOOCr-ODq-ajnw!5e0!3m2!1sja!2sjp!4v1709558116298!5m2!1sja!2sjp"}
-                            width="800"
+                            max-width="800"
+                            width="80%"
                             height="600"
                             style="border:0;"
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"/>
+                        </p>
+                        <p>
+                            ***元々の地図の画像***
+                            <>{/*<Image className={styles.LogoImage} src={"/map.svg"} alt={"TNP Map"} width={2880} height={1080} />*/}</>
                         </p>
                         <p>
                             上記の画像の赤色で示すところが部室です。いつでも見学を受け付けていますので、ぜひお越しください！
@@ -138,7 +144,7 @@ export default function About() {
                             TNPはプログラミングや制作活動に興味がある人をいつでも募集しています。
                         </p>
                         <p>
-                        いつでも見学・加入を歓迎していますので、ご質問がございましたら、「Contact」ページのお問い合わせフォームにてお問い合わせください！
+                            いつでも見学・加入を歓迎していますので、ご質問がございましたら、「Contact」ページのお問い合わせフォームにてお問い合わせください！
                         </p>
                     </div>
                 </div>
