@@ -1,16 +1,16 @@
 "use client";
 
-import Iframe from "react-iframe"
-import styles from "./page.module.css"
+import Iframe from "react-iframe";
+import styles from "./page.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function About() {
 
-    const [windowHeight, nowHeight] = useState(0);
+    const [windowHeight, setWindowHeight] = useState(0);
     useEffect(()=>{
-        nowHeight(window.innerHeight);
-    })
+        setWindowHeight(window.innerHeight);
+    });
 
     return (
         <div className={styles.Background}>
@@ -154,8 +154,10 @@ export default function About() {
                         </p>
                         <p>
                             いつでも見学・加入を歓迎していますので、ご質問がございましたら、「
-                            <Link className={`${styles.LinkText}`} href={"/contact"}>contact
-    </Link>」ページのお問い合わせフォームにてお問い合わせください！
+                            <Link className={`${styles.LinkText}`} href={"/contact"}>
+                                Contact
+                            </Link>
+                            」ページのお問い合わせフォームにてお問い合わせください！
                         </p>
                     </div>
                 </div>
