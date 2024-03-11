@@ -9,8 +9,8 @@ export default function PersonaPrevCard(persona: Persona) {
         <main style={{ '--primaryColor': persona.primaryColor, '--secondaryColor': persona.secondaryColor, '--backgroundColor': persona.backgroundColor } as React.CSSProperties} className={styles.RootWrapper}>
             <PersonaIcon  {...persona}/>
             <div className={styles.TextAreaWrapper}>
-                <h2>{persona.displayName}</h2>
-                <p>{persona.description.length > MAX_PERSONA_DESC_LENGTH ? persona.description.substring(0, MAX_PERSONA_DESC_LENGTH-1) + "…" : persona.description}</p>
+                <h2 className={styles.DisplayName}>{persona.displayName}</h2>
+                <p className={styles.Description}>{persona.description.length > MAX_PERSONA_DESC_LENGTH ? persona.description.substring(0, MAX_PERSONA_DESC_LENGTH-1) + "…" : persona.description}</p>
             </div>
         </main>
     )

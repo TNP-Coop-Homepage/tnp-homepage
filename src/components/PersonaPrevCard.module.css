@@ -4,9 +4,13 @@
     align-items: center;
     max-width: 15rem;
 
-    padding: .3rem;
+    padding: 1.5rem;
     background-color: var(--backgroundColor);
     border-radius: 1.2rem;
+}
+
+.DisplayName {
+    margin-bottom: 0.5rem;
 }
 
 .Icon {

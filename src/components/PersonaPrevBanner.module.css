@@ -11,6 +11,10 @@
     margin: 0 0.5rem;
 }
 
+.DisplayName {
+    margin-bottom: 0.5rem;
+}
+
 .Icon {
     flex-basis: 128px;
     flex-shrink: 0;

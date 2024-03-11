@@ -13,7 +13,7 @@ export default function PersonaPrevBanner(persona: Persona) {
         } as React.CSSProperties} className={styles.RootWrapper}>
             <PersonaIcon  {...persona}/>
             <div className={styles.TextAreaWrapper}>
-                <h2>{persona.displayName}</h2>
+                <h2 className={styles.DisplayName}>{persona.displayName}</h2>
                 <p>{persona.description.length > MAX_PERSONA_BANNER_LENGTH ? persona.description.substring(0, MAX_PERSONA_BANNER_LENGTH - 1) + "…" : persona.description}</p>
             </div>
         </main>

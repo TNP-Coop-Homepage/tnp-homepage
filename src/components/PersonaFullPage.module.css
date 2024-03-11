@@ -10,6 +10,10 @@
     margin-bottom: 1rem;
 }
 
+.PersonaAreaWrapper>* {
+    margin: 0 0.5rem;
+}
+
 .TextAreaWrapper {
     display: flex;
     flex-direction: row;
