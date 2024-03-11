@@ -3,6 +3,7 @@
   --primary-accent-rgb: #556A28;
   --primary-text-rgb: #1A1A1A;
   --secondary-accent-rgb: #AAD350;
+  --navigation-width: 20rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,7 +24,6 @@ html,
 body {
   width: 100vw;
   overflow-x: hidden;
-  display: flex;
 }
 
 a {
@@ -38,5 +38,5 @@ a {
 }
 
 .children {
-  flex-grow: 1;
+  padding-left: var(--navigation-width);
 }
