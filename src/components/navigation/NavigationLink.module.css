@@ -13,3 +13,14 @@
     color: var(--primary-accent-rgb);
     background: var(--background-rgb);
 }
+
+@media (prefers-color-scheme: dark) {
+    .NavigationLink {
+        color: var(--primary-accent-rgb);
+    }
+
+    .NavigationLinkSelected {
+        color: var(--background-rgb);
+        background: var(--primary-accent-rgb);
+    }
+}
