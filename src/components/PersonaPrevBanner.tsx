@@ -1,7 +1,7 @@
 import React from "react";
 import {Persona} from "@/types/Persona";
 import styles from "./PersonaPrevBanner.module.css";
-import {MAX_PERSONA_BANNER_LENGTH} from "@/components/MAX_PERSONA_DESC_LENGTH";
+import {MAX_PERSONA_BANNER_LENGTH} from "@/components/PERSONA_CONSTS";
 import PersonaIcon from "@/components/PersonaIcon";
 
 export default function PersonaPrevBanner(persona: Persona) {
