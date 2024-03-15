@@ -1,8 +1,3 @@
-.RootWrapper {
-    display: flex;
-    flex-direction: column;
-}
-
 .PersonaAreaWrapper {
     display: flex;
     flex-direction: row;
@@ -12,11 +7,6 @@
 
 .PersonaAreaWrapper>* {
     margin: 0 0.5rem;
-}
-
-.TextAreaWrapper {
-    display: flex;
-    flex-direction: row;
 }
 
 .DisplayName {
