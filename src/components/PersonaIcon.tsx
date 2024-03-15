@@ -4,6 +4,7 @@ import React from "react";
 import {Persona} from "@/types/Persona";
 
 export default function PersonaIcon(persona: Persona) {
-    return <img src={persona.iconSrc} alt={persona.displayName} className={`${styles.Icon} ${personaStyles.Icon}`} width={128}
-         height={128}/>
+    return <div className={`${styles.Icon}`}>
+        <Image src={persona.iconSrc} alt={persona.displayName} width={128} height={128}/>
+    </div>
 }
