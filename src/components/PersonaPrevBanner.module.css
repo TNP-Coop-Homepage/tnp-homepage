@@ -1,5 +1,6 @@
 .RootWrapper {
     display: flex;
+    margin: 1rem;
     flex-direction: row;
     align-items: center;
     background-color: var(--backgroundColor);
