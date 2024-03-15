@@ -1,7 +1,7 @@
-import styles from "@/components/PersonaPrevBanner.module.css";
-import personaStyles from "@/components/PersonaShared.module.css";
+import styles from "@/components/PersonaIcon.module.css";
 import React from "react";
 import {Persona} from "@/types/Persona";
+import Image from "next/image";
 
 export default function PersonaIcon(persona: Persona) {
     return <div className={`${styles.Icon}`}>
