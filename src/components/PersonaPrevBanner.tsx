@@ -3,13 +3,15 @@ import {Persona} from "@/types/Persona";
 import styles from "./PersonaPrevBanner.module.css";
 import {MAX_PERSONA_BANNER_LENGTH} from "@/components/PERSONA_CONSTS";
 import PersonaIcon from "@/components/PersonaIcon";
+import InvertHexColor from "@/utils/color/InvertHexColor";
 
 export default function PersonaPrevBanner(persona: Persona) {
     return (
         <main style={{
             '--primaryColor': persona.primaryColor,
             '--secondaryColor': persona.secondaryColor,
-            '--backgroundColor': persona.backgroundColor
+            '--backgroundColor': persona.backgroundColor,
+            '--backgroundColorDark': InvertHexColor(persona.backgroundColor)
         } as React.CSSProperties} className={styles.RootWrapper}>
             <PersonaIcon  {...persona}/>
             <div className={styles.TextAreaWrapper}>

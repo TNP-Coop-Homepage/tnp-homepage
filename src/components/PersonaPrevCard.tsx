@@ -3,13 +3,15 @@ import {Persona} from "@/types/Persona";
 import styles from "./PersonaPrevCard.module.css";
 import {MAX_PERSONA_CARD_LENGTH} from "@/components/PERSONA_CONSTS";
 import PersonaIcon from "@/components/PersonaIcon";
+import InvertHexColor from "@/utils/color/InvertHexColor";
 
 export default function PersonaPrevCard(persona: Persona) {
     return (
         <main style={{
             '--primaryColor': persona.primaryColor,
             '--secondaryColor': persona.secondaryColor,
-            '--backgroundColor': persona.backgroundColor
+            '--backgroundColor': persona.backgroundColor,
+            '--backgroundColorDark': InvertHexColor(persona.backgroundColor)
         } as React.CSSProperties} className={styles.RootWrapper}>
             <PersonaIcon  {...persona}/>
             <div className={styles.TextAreaWrapper}>

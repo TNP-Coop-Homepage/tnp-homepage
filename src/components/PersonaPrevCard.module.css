@@ -24,3 +24,13 @@
     align-items: center;
     margin-top: .5rem;
 }
+
+@media (prefers-color-scheme: dark) {
+    .DisplayName {
+        border-bottom: 1px #aaa solid;
+    }
+
+    .RootWrapper {
+        background-color: var(--backgroundColorDark);
+    }
+}
