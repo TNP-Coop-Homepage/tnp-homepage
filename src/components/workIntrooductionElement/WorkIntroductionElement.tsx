@@ -1,12 +1,13 @@
 import { Work } from "@/types/Work"
+import { GamePreviewImage } from "@/types/GamePreviewImage";
 import GamePreviewImages from "./GamePreviewImages"
 import styles from "./WorkIntroductionElement.module.css"
 import BondAuthor from "./BondAuthor";
 
 
-export default function WorkIntroductionElement(works: Work[]){
+export default function WorkIntroductionElement(works: Work[]) {
 
-    const introductions = Object.keys(works).map((value, i)=>{
+    const introductions = Object.keys(works).map((value, i) => {
         return (
             <div key={i}>
                 <h1 className={styles.WorkTitle}>{works[i].title}</h1>
@@ -20,7 +21,7 @@ export default function WorkIntroductionElement(works: Work[]){
                 <p>
                     {works[i].comment}
                 </p>
-                <br/>
+                <br />
             </div>
         )
     });
