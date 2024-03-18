@@ -15,12 +15,12 @@ const Navigation = () => {
         <nav className={styles.Navigation}>
             <div className={styles.NavigationTop}>
                 <div className={styles.Logo}>
-                    <Link href={"/main"}>
+                    <Link href={"/"}>
                         <Image className={styles.LogoImage} src={"/logo_light.svg"} alt={"TNP Logo"} width={2880} height={1080} />
                     </Link>
                 </div>
                 <div className={styles.Links}>
-                    <NavigationPageLink title={"Home"} selected={pathname === "/main"} url={"/main"} />
+                    <NavigationPageLink title={"Home"} selected={pathname === "/"} url={"/"} />
                     <NavigationPageLink title={"About"} selected={pathname === "/about"} url={"/about"} />
                     <NavigationExternalLink title={"Blog"} url={"http://akitatnp.wp.xdomain.jp/"} />
                     <NavigationPageLink title={"GameCenter"} selected={pathname === "/gamecenter"} url={"/gamecenter"} />
@@ -28,7 +28,7 @@ const Navigation = () => {
                 </div>
             </div>
             <div>
-                <a href="https://twitter.com/tnp_akita"><img className={styles.X} src="X2.png" alt="X" /></a>
+                <a href="https://twitter.com/tnp_akita"><img className={styles.X} src="X-logo.png" alt="X" width="56px" height="56px" /></a>
                 <p>
                     © 2024 TNP
                 </p>

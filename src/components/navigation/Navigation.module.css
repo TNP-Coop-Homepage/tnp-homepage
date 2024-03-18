@@ -31,6 +31,9 @@
     flex-direction: column;
     gap: .5rem;
 }
+.X{
+    padding: 2px;
+}
 .X:hover{
     background-color: #aad350;
 }
