@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
-import GamePreviewImages from "@/components/gamePreviewImages/GamePreviewImages";
+import WorkIntroductionElement from "@/components/workIntrooductionElement/WorkIntroductionElement";
 import { GamePreviewImage } from "@/types/GamePreviewImage";
+import { Work } from "@/types/Work";
 
 export default function WorkIntroduction() {
 
@@ -37,6 +38,22 @@ export default function WorkIntroduction() {
         }
     ]
 
+    const Corelynx: Work = {
+        title: "Corelynx",
+        authors: ["空中ブランコ"],
+        images: images,
+        explanation: "試合ごとに地形が変わる世界で Capture The Flag で遊ぶオンラインマルチプレイFPS。コアを見つけ占領し、敵から守り抜こう！",
+        comment: "あればコメント"
+    }
+
+    const Vergilius: Work = {
+        title: "Vergilius",
+        authors: ["Δmp", "レイル", "℃(せし)", "yoshinob", "yugo"],
+        images: null,
+        explanation: "5人で合作した作品のプロトタイプ\nランダムに生成されるダンジョンを進んでいくローグライク。インベントリから魔法を組み替えてオリジナルの魔法を作り、深みを目指そう！",
+        comment: null
+    }
+
     return (
         <div className={styles.Background}>
             <div className={styles.WorkIntroduction}>
@@ -60,33 +77,8 @@ export default function WorkIntroduction() {
                     <div className={styles.ParagraphMargin}>
                         <h2 className={styles.Header}>作品紹介</h2>
                         <hr className={styles.HorizontalLine}></hr>
-                        <h3 className={styles.BodySubHeader}>Corelynx</h3>
-                        <p>
-                            作者-&gt;空中ブランコ
-                        </p>
-                        <GamePreviewImages {...images}></GamePreviewImages>
-                        <p>
-                            試合ごとに地形が変わる世界で Capture The Flag で遊ぶオンラインマルチプレイFPS。コアを見つけ占領し、敵から守り抜こう！
-                        </p>
-                        <p>
-                            ***あれば何か一言***
-                        </p><br />
-                        <h3 className={styles.BodySubHeader}>Vergilius</h3>
-                        <p>
-                            作者-&gt;Δmp.、レイル、℃(せし)、yoshinob、yugo
-                        </p>
-                        <p>
-                            ***画像***
-                        </p>
-                        <p>
-                            5人で合作した作品のプロトタイプ
-                        </p>
-                        <p>
-                            ランダムに生成されるダンジョンを進んでいくローグライク。インベントリから魔法を組み替えてオリジナルの魔法を作り、深みを目指そう！
-                        </p>
-                        <p>
-                            ***あれば何か一言***
-                        </p>
+                        <WorkIntroductionElement {...Corelynx}></WorkIntroductionElement><br />
+                        <WorkIntroductionElement {...Vergilius}></WorkIntroductionElement>
                     </div>
                 </div>
             </div>
