@@ -1,4 +1,4 @@
-import styles from "@/components/PersonaIcon.module.css";
+import styles from "@/components/persona/PersonaIcon.module.css";
 import React from "react";
 import {Persona} from "@/types/Persona";
 import Image from "next/image";

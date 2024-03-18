@@ -1,7 +1,7 @@
 import React from "react";
 import {Persona} from "@/types/Persona";
 import styles from "./PersonaFullPage.module.css";
-import PersonaIcon from "@/components/PersonaIcon";
+import PersonaIcon from "@/components/persona/PersonaIcon";
 
 export default function PersonaFullPage(persona: Persona) {
     return (

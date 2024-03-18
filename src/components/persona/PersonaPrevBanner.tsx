@@ -1,11 +1,11 @@
 import React from "react";
 import {Persona} from "@/types/Persona";
-import styles from "./PersonaPrevCard.module.css";
-import {MAX_PERSONA_CARD_LENGTH} from "@/components/PERSONA_CONSTS";
-import PersonaIcon from "@/components/PersonaIcon";
+import styles from "./PersonaPrevBanner.module.css";
+import {MAX_PERSONA_BANNER_LENGTH} from "@/components/persona/PERSONA_CONSTS";
+import PersonaIcon from "@/components/persona/PersonaIcon";
 import InvertHexColor from "@/utils/color/InvertHexColor";
 
-export default function PersonaPrevCard(persona: Persona) {
+export default function PersonaPrevBanner(persona: Persona) {
     return (
         <main style={{
             '--primaryColor': persona.primaryColor,
@@ -16,9 +16,8 @@ export default function PersonaPrevCard(persona: Persona) {
             <PersonaIcon  {...persona}/>
             <div className={styles.TextAreaWrapper}>
                 <h2 className={styles.DisplayName}>{persona.displayName}</h2>
-                <p className={styles.Description}>{persona.description.length > MAX_PERSONA_CARD_LENGTH ? persona.description.substring(0, MAX_PERSONA_CARD_LENGTH - 1) + "…" : persona.description}</p>
+                <p>{persona.description.length > MAX_PERSONA_BANNER_LENGTH ? persona.description.substring(0, MAX_PERSONA_BANNER_LENGTH - 1) + "…" : persona.description}</p>
             </div>
         </main>
     )
 }
-
