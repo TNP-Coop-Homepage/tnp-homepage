@@ -1,0 +1,13 @@
+.TNPMap {
+    width: 100%;
+    height: 95%;
+    max-height: 90vh;
+    max-width: 90vw;
+}
+
+.Light {
+}
+
+.Dark {
+    filter: invert(1) hue-rotate(205deg);
+}
