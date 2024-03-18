@@ -54,6 +54,8 @@ export default function WorkIntroduction() {
         comment: null
     }
 
+    const works: Work[] = [Corelynx, Vergilius]
+
     return (
         <div className={styles.Background}>
             <div className={styles.WorkIntroduction}>
@@ -77,8 +79,7 @@ export default function WorkIntroduction() {
                     <div className={styles.ParagraphMargin}>
                         <h2 className={styles.Header}>作品紹介</h2>
                         <hr className={styles.HorizontalLine}></hr>
-                        <WorkIntroductionElement {...Corelynx}></WorkIntroductionElement><br />
-                        <WorkIntroductionElement {...Vergilius}></WorkIntroductionElement>
+                        <WorkIntroductionElement {...works}></WorkIntroductionElement>
                     </div>
                 </div>
             </div>

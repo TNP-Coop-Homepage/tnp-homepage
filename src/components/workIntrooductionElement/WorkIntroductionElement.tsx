@@ -1,23 +1,33 @@
 import { Work } from "@/types/Work"
-import GamePreviewImages from "../gamePreviewImages/GamePreviewImages"
+import GamePreviewImages from "./GamePreviewImages"
 import styles from "./WorkIntroductionElement.module.css"
 import BondAuthor from "./BondAuthor";
 
 
-export default function WorkIntroductionElement(work: Work){    
+export default function WorkIntroductionElement(works: Work[]){
+
+    const introductions = Object.keys(works).map((value, i)=>{
+        return (
+            <div key={i}>
+                <h1 className={styles.WorkTitle}>{works[i].title}</h1>
+                <p>
+                    作者-&gt;{BondAuthor(works[i].authors)}
+                </p>
+                {works[i].images ? <GamePreviewImages {...works[i].images}></GamePreviewImages> : null}
+                <p>
+                    {works[i].explanation}
+                </p>
+                <p>
+                    {works[i].comment}
+                </p>
+                <br/>
+            </div>
+        )
+    });
+
     return (
         <div>
-            <h1 className={styles.WorkTitle}>{work.title}</h1>
-            <p>
-                作者-&gt;{BondAuthor(work.authors)}
-            </p>
-                {work.images ? <GamePreviewImages {...work.images}></GamePreviewImages> : null}
-            <p>
-                {work.explanation}
-            </p>
-            <p>
-                {work.comment}
-            </p>
+            {introductions}
         </div>
     )
-    }
+}
