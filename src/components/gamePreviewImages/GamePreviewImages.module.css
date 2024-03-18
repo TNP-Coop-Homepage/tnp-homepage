@@ -1,0 +1,9 @@
+.GameImage {
+    width: 40%;
+    height: auto;
+}
+
+.ImageBox{
+    overflow-x: scroll;
+    white-space: nowrap;
+}

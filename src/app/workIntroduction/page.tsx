@@ -1,6 +1,42 @@
 import styles from "./page.module.css";
+import GamePreviewImages from "@/components/gamePreviewImages/GamePreviewImages";
+import { GamePreviewImage } from "@/types/GamePreviewImage";
 
 export default function WorkIntroduction() {
+
+    const images: GamePreviewImage[] = [
+        {
+            imageSrc: "/sampleA.png",
+            displayName: "A",
+            width: 440,
+            height: 310
+        },
+        {
+            imageSrc: "/sampleB.png",
+            displayName: "B",
+            width: 440,
+            height: 310
+        },
+        {
+            imageSrc: "/sampleC.png",
+            displayName: "C",
+            width: 440,
+            height: 310
+        },
+        {
+            imageSrc: "/sampleD.png",
+            displayName: "D",
+            width: 440,
+            height: 310
+        },
+        {
+            imageSrc: "/sampleE.png",
+            displayName: "E",
+            width: 440,
+            height: 310
+        }
+    ]
+
     return (
         <div className={styles.Background}>
             <div className={styles.WorkIntroduction}>
@@ -28,9 +64,7 @@ export default function WorkIntroduction() {
                         <p>
                             作者-&gt;空中ブランコ
                         </p>
-                        <p>
-                            ***画像***
-                        </p>
+                        <GamePreviewImages {...images}></GamePreviewImages>
                         <p>
                             試合ごとに地形が変わる世界で Capture The Flag で遊ぶオンラインマルチプレイFPS。コアを見つけ占領し、敵から守り抜こう！
                         </p>
