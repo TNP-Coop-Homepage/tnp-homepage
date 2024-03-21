@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 import styles from "./page.module.css";
 import WorkIntroductionElement from "@/components/workIntrooductionElement/WorkIntroductionElement";
 import { GamePreviewImage } from "@/types/GamePreviewImage";
@@ -43,7 +45,7 @@ export default function WorkIntroduction() {
         authors: ["空中ブランコ"],
         images: images,
         explanation: "試合ごとに地形が変わる世界で Capture The Flag で遊ぶオンラインマルチプレイFPS。コアを見つけ占領し、敵から守り抜こう！",
-        comment: "あればコメント"
+        comment: null
     }
 
     const Vergilius: Work = {
@@ -67,13 +69,14 @@ export default function WorkIntroduction() {
                         <h2 className={styles.Header}>ここは？</h2>
                         <hr className={styles.HorizontalLine}></hr>
                         <p>
-                            私たちTNPが過去に製作した作品の一部を紹介するページです
+                            私たちTNPが過去に制作した作品の一部を紹介するページです
                         </p>
                         <p>
                             ここで紹介されている作品は、大学からプログラミングを始めた人の作品や皆で協力して創った作品もあるよ
                         </p>
                         <p>
-                            自分もこんな作品を創ってみたい、遊んでみたいと思った方はぜひ見学を！お問い合わせはこちら
+                            自分もこんな作品を創ってみたい、遊んでみたいと思った方はぜひ見学を！お問い合わせは
+                            <Link className={styles.LinkText} href={"/contact"}>こちら</Link>
                         </p>
                     </div>
                     <div className={styles.ParagraphMargin}>

@@ -2,8 +2,6 @@ import { Work } from "@/types/Work"
 import { GamePreviewImage } from "@/types/GamePreviewImage";
 import GamePreviewImages from "./GamePreviewImages"
 import styles from "./WorkIntroductionElement.module.css"
-import BondAuthor from "./BondAuthor";
-
 
 export default function WorkIntroductionElement(works: Work[]) {
 
@@ -12,9 +10,9 @@ export default function WorkIntroductionElement(works: Work[]) {
             <div key={i}>
                 <h1 className={styles.WorkTitle}>{works[i].title}</h1>
                 <p>
-                    作者-&gt;{BondAuthor(works[i].authors)}
+                    作者→{works[i].authors.join("、")}
                 </p>
-                {works[i].images ? <GamePreviewImages {...works[i].images}></GamePreviewImages> : null}
+                    {works[i].images ? <GamePreviewImages {...works[i].images}></GamePreviewImages> : null}
                 <p>
                     {works[i].explanation}
                 </p>

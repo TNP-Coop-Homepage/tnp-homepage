@@ -44,10 +44,6 @@
     font-size: 1.5rem;
 }
 
-.BodySubHeader {
-    font-size: 1.3rem;
-}
-
 .BodyText {
     font-size: 1rem;
     white-space: pre-wrap;
@@ -57,17 +53,24 @@
     margin-left: 1rem;
 }
 
-.BodySubHeader {
-    font-size: 1.3rem;
+.LinkText:link {
+    color: blue;
+}
+
+.LinkText:active {
+    color: red;
+}
+
+.LinkText:hover {
+    color: red;
+}
+
+.LinkText:visited {
+    color: purple;
 }
 
 .ParagraphMargin {
     margin-bottom: 1rem;
-}
-
-.UnorderedList {
-    padding-left: 1.2rem;
-    margin-left: 1rem;
 }
 
 .HorizontalLine {
