@@ -1,17 +1,17 @@
-.About{
+.About {
     padding: 2%;
     width: 100%;
     max-width: 60rem;
-    margin: 0;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
-.Background{
+.Background {
     background-color: rgb(249, 249, 249);
     width: 100%;
 }
 
-.HeaderImage{
+.HeaderImage {
     box-sizing: border-box;
     background-image: none;
     background-color: aliceblue;
@@ -22,57 +22,58 @@
     /*この下はあまり変更しないで*/
     display: flex;
     align-items: flex-end;
-    box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.2) inset;
-    margin:0 auto;
+    box-shadow: 0px -10px 10px 0px rgba(0, 0, 0, 0.2) inset;
+    margin: 0 auto;
 }
 
-.HeaderImageText{
+.HeaderImageText {
     margin-left: 2rem;
-    color:red !important;
+    color: red !important;
     font-size: x-large;
 }
 
-.Header{
+.Header {
     border-left: 0.5rem solid green;
     padding-left: 0.5rem;
 }
 
-.Header h1{
+.Header h1 {
     font-size: 3rem;
 }
 
-.Header h2{
+.Header h2 {
     font-size: 1.5rem;
 }
 
-.BodySubHeader{
+.BodySubHeader {
     font-size: 1.3rem;
 }
 
-.BodyText{
+.BodyText {
     font-size: 1rem;
     white-space: pre-wrap;
 }
 
-.BodyText p{
+.BodyText p {
     margin-left: 1rem;
 }
 
-.LinkText{
+.LinkText {
     color: blue;
 }
 
-.ParagraphMargin{
+.ParagraphMargin {
     margin-bottom: 1rem;
 }
 
-.UnorderedList{
+.UnorderedList {
     padding-left: 1.2rem;
     margin-left: 1rem;
 }
 
-.HorizontalLine{
+.HorizontalLine {
     width: 98%;
-    position: relative; left: 0.5%;
+    position: relative;
+    left: 0.5%;
     margin-left: 1%;
 }
