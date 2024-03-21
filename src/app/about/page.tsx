@@ -1,9 +1,11 @@
 "use client";
 
 import Iframe from "react-iframe";
-import styles from "./page.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+
+import styles from "./page.module.css";
+import SimpleTNPMap from "@/components/map/SimpleTNPMap";
 
 export default function About() {
 
@@ -73,11 +75,9 @@ export default function About() {
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"/>
                         </p>
+                        <SimpleTNPMap enableDarkMode={false}></SimpleTNPMap>
                         <p>
-                            <>{/*<Image className={styles.LogoImage} src={"/map.svg"} alt={"TNP Map"} width={2880} height={1080} />*/}</>
-                        </p>
-                        <p>
-                            上記の画像の赤色で示すところが部室です。いつでも見学を受け付けていますので、ぜひお越しください！
+                            上記の画像の緑色で示すところが部室です。いつでも見学を受け付けていますので、ぜひお越しください！
                         </p>
                     </div>
                     <div className={styles.ParagraphMargin}>
