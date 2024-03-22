@@ -13,7 +13,7 @@ export default function WorkIntroduction() {
                 <h1 className={styles.Header}>WorkIntroduction</h1>
                 <hr className={styles.HorizontalLine}></hr><br />
                 <div className={styles.BodyText}>
-                    <div className={styles.ParagraphMargin}>
+                    <section className={styles.SectionMargin}>
                         <h2 className={styles.Header}>ここは？</h2>
                         <hr className={styles.HorizontalLine}></hr>
                         <p>
@@ -26,12 +26,12 @@ export default function WorkIntroduction() {
                             自分もこんな作品を創ってみたい、遊んでみたいと思った方はぜひ見学を！お問い合わせは
                             <Link className={styles.LinkText} href={"/contact"}>こちら</Link>
                         </p>
-                    </div>
-                    <div className={styles.ParagraphMargin}>
+                    </section>
+                    <section className={styles.SectionMargin}>
                         <h2 className={styles.Header}>作品紹介</h2>
                         <hr className={styles.HorizontalLine}></hr>
-                        <WorkIntroductionElement {...works}></WorkIntroductionElement>
-                    </div>
+                        <WorkIntroductionElement works={works}></WorkIntroductionElement>
+                    </section>
                 </div>
             </main>
         </div>

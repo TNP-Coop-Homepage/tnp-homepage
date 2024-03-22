@@ -3,7 +3,7 @@ import { GamePreviewImage } from "@/types/GamePreviewImage";
 import GamePreviewImages from "./GamePreviewImages"
 import styles from "./WorkIntroductionElement.module.css"
 
-export default function WorkIntroductionElement(works: Work[]) {
+export default function WorkIntroductionElement({ works }: { works: Work[] }) {
     return (
         <div>
             {
@@ -14,7 +14,7 @@ export default function WorkIntroductionElement(works: Work[]) {
                             <p>
                                 作者→{works[i].authors.join("、")}
                             </p>
-                                {works[i].images ? <GamePreviewImages {...works[i].images}></GamePreviewImages> : null}
+                                {works[i].images ? <GamePreviewImages {...(works[i].images as GamePreviewImage[])}></GamePreviewImages> : null}
                             <p>
                                 {works[i].explanation}
                             </p>
