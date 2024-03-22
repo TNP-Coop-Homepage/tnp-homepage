@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 import styles from "./page.module.css";
-import WorkIntroductionElement from "@/components/workIntrooductionElement/WorkIntroductionElement";
+import WorkIntroductionElement from "@/components/workIntroductionElement/WorkIntroductionElement";
 import { works } from "./WORK_CONTENTS";
 
 export default function WorkIntroduction() {
