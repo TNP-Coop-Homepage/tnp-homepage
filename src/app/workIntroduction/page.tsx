@@ -7,7 +7,8 @@ import { works } from "./WORK_CONTENTS";
 export default function WorkIntroduction() {
     return (
         <div className={styles.Background}>
-            <div className={styles.WorkIntroduction}>
+            <header className={styles.HeaderImage}><span className={styles.HeaderImageText}>秋田大学プログラミングサークル</span></header>
+            <main className={styles.WorkIntroduction}>
                 <title>{"WorkIntroduction"}</title>
                 <h1 className={styles.Header}>WorkIntroduction</h1>
                 <hr className={styles.HorizontalLine}></hr><br />
@@ -32,7 +33,7 @@ export default function WorkIntroduction() {
                         <WorkIntroductionElement {...works}></WorkIntroductionElement>
                     </div>
                 </div>
-            </div>
+            </main>
         </div>
     );
 }
