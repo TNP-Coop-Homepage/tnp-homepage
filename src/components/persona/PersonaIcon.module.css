@@ -1,0 +1,11 @@
+.Icon {
+    flex-basis: 128px;
+    flex-shrink: 0;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    /*box-shadow: 0 0 .8rem 1px var(--primaryColor);*/
+    box-sizing: border-box;
+}
