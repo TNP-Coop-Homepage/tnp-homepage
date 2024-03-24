@@ -69,11 +69,11 @@ export default function About() {
                             <Iframe url={"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d322.5534641710882!2d140.13480373670654!3d39.724757162846565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8fc298e534e24d%3A0xd57758679f66e202!2z44CSMDEwLTA4NTIg56eL55Sw55yM56eL55Sw5biC5omL5b2i5a2m5ZyS55S677yRIOOCteODvOOCr-ODq-ajnw!5e0!3m2!1sja!2sjp!4v1709558116298!5m2!1sja!2sjp"}
                                 max-width="800"
                                 width="80%"
-                                height={windowHeight / 2}
-                                style="border:0;"
-                                allowfullscreen=""
+                                height={(windowHeight / 2).toString()}
+                                styles={{ border: "0" }}
+                                allowFullScreen={false}
                                 loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade" />
+                                referrerpolicy="no-referrer-when-downgrade" />
                         </p>
                         <SimpleTNPMap enableDarkMode={false}></SimpleTNPMap>
                         <p>
@@ -91,7 +91,7 @@ export default function About() {
                             新入部員の第一次歓迎会でもある「花見」は、千秋公園に桜を見に行きます。当日天候が悪い場合は、サークル棟でボードゲームなどをして遊んでいます。
                         </p>
                         <p>
-                            <strike>しかし大抵は、なぜか当日天候が悪くなってしまい、部室で「花見」(とボードゲーム)を行っています。</strike>
+                            <s>しかし大抵は、なぜか当日天候が悪くなってしまい、部室で「花見」(とボードゲーム)を行っています。</s>
                         </p>
                         <h3 className={styles.BodySubHeader}>5月</h3>
                         <p>
