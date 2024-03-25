@@ -1,0 +1,18 @@
+.PersonaAreaWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.PersonaAreaWrapper > * {
+    margin: 0 0.5rem;
+}
+
+.DisplayName {
+    align-self: center;
+    /*background: var(--primaryColor);*/
+
+    padding: 0.25rem 0.5rem;
+    border-bottom: 2px solid var(--primaryColor);
+}

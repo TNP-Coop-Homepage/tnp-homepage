@@ -26,7 +26,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: blue;
   text-decoration: none;
 }
 
@@ -39,3 +39,4 @@ a {
 .children {
   flex-grow: 1;
 }
+

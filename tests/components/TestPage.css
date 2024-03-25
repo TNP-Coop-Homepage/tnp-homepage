@@ -1,0 +1,15 @@
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    border-bottom: 2px #fff solid;
+}
+
+h2 {
+    border-bottom: 1px #ffffff solid;
+}
+
+.h3 {
+    border-bottom: 2px #aaa dashed;
+}
