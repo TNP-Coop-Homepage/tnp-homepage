@@ -13,8 +13,8 @@
 
 .HeaderImage {
     box-sizing: border-box;
-    background-image: none;
-    background-color: aliceblue;
+    background-image: url(/TNPheader.jpg);
+    background-size: cover;
     /*あとでヘッダー画像をここにつける*/
     /*50:21*/
     width: 100%;
@@ -28,7 +28,7 @@
 
 .HeaderImageText {
     margin-left: 2rem;
-    color: red !important;
+    color: rgba(46, 44, 44, 0.705);
     font-size: x-large;
 }
 
