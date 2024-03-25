@@ -28,7 +28,7 @@ const Navigation = () => {
                 </div>
             </div>
             <div>
-                <a href="https://twitter.com/tnp_akita"><img className={styles.X} src="X-logo.png" alt="X" width="56px" height="56px" /></a>
+                <a href="https://twitter.com/tnp_akita"><img className={styles.X} src="X-logo.svg" alt="X" width="56px" height="56px" /></a>
                 <p>
                     © 2024 TNP
                 </p>
