@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 import styles from "./page.module.css";
 import SimpleTNPMap from "@/components/map/SimpleTNPMap";
+import { CONTACT_FORM_URL } from "@/consts/CONTACT_FORM_URL";
 
 export default function About() {
 
@@ -154,7 +155,7 @@ export default function About() {
                         </p>
                         <p>
                             いつでも見学・加入を歓迎していますので、ご質問がございましたら、「
-                            <Link className={`${styles.LinkText}`} href={"/contact"}>
+                            <Link className={`${styles.LinkText}`} href={CONTACT_FORM_URL}>
                                 Contact
                             </Link>
                             」ページのお問い合わせフォームにてお問い合わせください！
