@@ -38,6 +38,10 @@ a {
   html {
     color-scheme: dark;
   }
+
+  a {
+    color: #7799ff;
+  }
 }
 
 .children {

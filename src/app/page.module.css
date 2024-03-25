@@ -54,3 +54,9 @@
 .main .p_first{
     margin-left: 2rem;
 }
+
+@media (prefers-color-scheme: dark) {
+    .hs {
+        border-bottom: 1px solid #666666;
+    }
+}
