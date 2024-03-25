@@ -27,8 +27,10 @@ const Navigation = () => {
                     <NavigationPageLink title={"Contact"} selected={pathname === "/contact"} url={"/contact"} />
                 </div>
             </div>
-            <div>
-                <a href="https://twitter.com/tnp_akita"><img className={styles.X} src="X-logo.png" alt="X" width="56px" height="56px" /></a>
+            <div className={styles.NavigationBottom}>
+                <a href="https://twitter.com/tnp_akita">
+                    <img className={styles.X} src="/X-logo.png" alt="X" />
+                </a>
                 <p>
                     © 2024 TNP
                 </p>
