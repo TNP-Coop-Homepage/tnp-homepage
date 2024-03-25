@@ -3,6 +3,7 @@ import Link from "next/link"
 import styles from "./page.module.css";
 import WorkIntroductionElement from "@/components/workIntroductionElement/WorkIntroductionElement";
 import { works } from "./WORK_CONTENTS";
+import { CONTACT_FORM_URL } from "@/consts/CONTACT_FORM_URL";
 
 export default function WorkIntroduction() {
     return (
@@ -24,7 +25,7 @@ export default function WorkIntroduction() {
                         </p>
                         <p>
                             自分もこんな作品を創ってみたい、遊んでみたいと思った方はぜひ見学を！お問い合わせは
-                            <Link className={styles.LinkText} href={"/contact"}>こちら</Link>
+                            <Link className={styles.LinkText} href={CONTACT_FORM_URL}>こちら</Link>
                         </p>
                     </section>
                     <section className={styles.SectionMargin}>
