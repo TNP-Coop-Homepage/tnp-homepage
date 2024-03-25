@@ -1,9 +1,9 @@
 import { Work } from "@/types/Work"
 import { GamePreviewImage } from "@/types/GamePreviewImage";
 import GamePreviewImages from "./GamePreviewImages"
-import styles from "./WorkIntroductionElement.module.css"
+import styles from "./WorksElement.module.css"
 
-export default function WorkIntroductionElement({ works }: { works: Work[] }) {
+export default function WorksElement({ works }: { works: Work[] }) {
     return (
         <div>
             {
