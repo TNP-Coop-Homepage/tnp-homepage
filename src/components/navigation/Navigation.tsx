@@ -23,7 +23,7 @@ const Navigation = () => {
                     <NavigationPageLink title={"Home"} selected={pathname === "/"} url={"/"} />
                     <NavigationPageLink title={"About"} selected={pathname === "/about"} url={"/about"} />
                     <NavigationExternalLink title={"Blog"} url={"http://akitatnp.wp.xdomain.jp/"} />
-                    <NavigationPageLink title={"GameCenter"} selected={pathname === "/gamecenter"} url={"/gamecenter"} />
+                    <NavigationPageLink title={"Works"} selected={pathname === "/works"} url={"/works"} />
                     <NavigationPageLink title={"Contact"} selected={pathname === "/contact"} url={"/contact"} />
                 </div>
             </div>
