@@ -25,6 +25,10 @@ body {
   display: flex;
 }
 
+p, ul {
+  line-height: 1.7;
+}
+
 a {
   color: blue;
   text-decoration: none;
@@ -33,6 +37,10 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+
+  a {
+    color: #7799ff;
   }
 }
 
