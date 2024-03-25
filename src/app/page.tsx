@@ -5,6 +5,7 @@ export default async function Home() {
     return <div className={styles.body}>
                 <header className={styles.header}><span className={styles.text_header}>秋田大学プログラミングサークル</span></header>
                 <main className={styles.main}>
+                    <title>{"秋田大学プログラミングサークルTNP"}</title>
                     <h1 className={styles.hs}>ようこそ</h1>
                     <p className={styles.p_first}>
                         <strong>『秋田大学プログラミングサークルTNP』</strong>は秋田大学公認のプログラミング&創作サークルです。
