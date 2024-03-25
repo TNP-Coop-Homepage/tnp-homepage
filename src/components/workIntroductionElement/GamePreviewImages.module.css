@@ -1,0 +1,11 @@
+.GameImage {
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+    position: relative !important;
+}
+
+.ImageBox {
+    overflow-x: scroll;
+    white-space: nowrap;
+}
