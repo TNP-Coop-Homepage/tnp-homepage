@@ -1,4 +1,4 @@
-.About {
+.WorkIntroduction {
     padding: 2%;
     width: 100%;
     max-width: 60rem;
@@ -8,7 +8,6 @@
 
 .Background {
     background-color: rgb(249, 249, 249);
-    width: 100%;
 }
 
 .HeaderImage {
@@ -45,10 +44,6 @@
     font-size: 1.5rem;
 }
 
-.BodySubHeader {
-    font-size: 1.3rem;
-}
-
 .BodyText {
     font-size: 1rem;
     white-space: pre-wrap;
@@ -76,11 +71,6 @@
 
 .SectionMargin {
     margin-bottom: 1rem;
-}
-
-.UnorderedList {
-    padding-left: 1.2rem;
-    margin-left: 1rem;
 }
 
 .HorizontalLine {
