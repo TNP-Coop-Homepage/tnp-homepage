@@ -57,11 +57,23 @@
     margin-left: 1rem;
 }
 
-.LinkText {
+.LinkText:link {
     color: blue;
 }
 
-.ParagraphMargin {
+.LinkText:active {
+    color: red;
+}
+
+.LinkText:hover {
+    color: red;
+}
+
+.LinkText:visited {
+    color: purple;
+}
+
+.SectionMargin {
     margin-bottom: 1rem;
 }
 

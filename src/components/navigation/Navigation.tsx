@@ -6,6 +6,7 @@ import Image from "next/image";
 import NavigationPageLink from "@/components/navigation/NavigationPageLink";
 import NavigationExternalLink from "@/components/navigation/NavigationExternalLink";
 import { usePathname } from 'next/navigation'
+import { CONTACT_FORM_URL } from '@/consts/CONTACT_FORM_URL';
 
 const Navigation = () => {
 
@@ -23,8 +24,8 @@ const Navigation = () => {
                     <NavigationPageLink title={"Home"} selected={pathname === "/"} url={"/"} />
                     <NavigationPageLink title={"About"} selected={pathname === "/about"} url={"/about"} />
                     <NavigationExternalLink title={"Blog"} url={"http://akitatnp.wp.xdomain.jp/"} />
-                    <NavigationPageLink title={"GameCenter"} selected={pathname === "/gamecenter"} url={"/gamecenter"} />
-                    <NavigationPageLink title={"Contact"} selected={pathname === "/contact"} url={"/contact"} />
+                    <NavigationPageLink title={"Works"} selected={pathname === "/works"} url={"/works"} />
+                    <NavigationExternalLink title={"Contact"} url={CONTACT_FORM_URL} />
                 </div>
             </div>
             <div>

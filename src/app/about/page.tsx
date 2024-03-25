@@ -6,13 +6,14 @@ import { useEffect, useState } from "react";
 
 import styles from "./page.module.css";
 import SimpleTNPMap from "@/components/map/SimpleTNPMap";
+import { CONTACT_FORM_URL } from "@/consts/CONTACT_FORM_URL";
 
 export default function About() {
 
     const [windowHeight, setWindowHeight] = useState(0);
     useEffect(() => {
         setWindowHeight(window.innerHeight);
-    });
+    }, []);
 
     return (
         <div className={styles.Background}>
@@ -22,7 +23,7 @@ export default function About() {
                 <h1 className={styles.Header}>About</h1>
                 <hr className={styles.HorizontalLine}></hr><br />
                 <div className={styles.BodyText}>
-                    <div className={styles.ParagraphMargin}>
+                    <section className={styles.SectionMargin}>
                         <h2 className={styles.Header}>TNPへようこそ</h2>
                         <hr className={styles.HorizontalLine}></hr>
                         <p>
@@ -46,8 +47,8 @@ export default function About() {
                         <p>
                             TNPの活動を通して、プログラミング学習のハードルを下げ、興味を持つ人がどんどん増えてほしいと思っています。
                         </p>
-                    </div>
-                    <div className={styles.ParagraphMargin}>
+                    </section>
+                    <section className={styles.SectionMargin}>
                         <h2 className={styles.Header}>活動内容</h2>
                         <hr className={styles.HorizontalLine}></hr>
                         <ul className={styles.UnorderedList}>
@@ -58,8 +59,8 @@ export default function About() {
                             <li>音楽制作(DTM)</li>
                             <li>好きなゲームで遊んだり創作したり(Minecraftなど)</li>
                         </ul>
-                    </div>
-                    <div className={styles.ParagraphMargin}>
+                    </section>
+                    <section className={styles.SectionMargin}>
                         <h2 className={styles.Header}>活動時間</h2>
                         <hr className={styles.HorizontalLine}></hr>
                         <p>
@@ -79,8 +80,8 @@ export default function About() {
                         <p>
                             上記の画像の緑色で示すところが部室です。いつでも見学を受け付けていますので、ぜひお越しください！
                         </p>
-                    </div>
-                    <div className={styles.ParagraphMargin}>
+                    </section>
+                    <section className={styles.SectionMargin}>
                         <h2 className={styles.Header}>イベント</h2>
                         <hr className={styles.HorizontalLine}></hr>
                         <h3 className={styles.BodySubHeader}>4月</h3>
@@ -139,14 +140,14 @@ export default function About() {
                             TNPでは、その他にもメンバー同士の交流またはメンバーのプログラミング技術向上を目的として活動時間外に集まって、作業したり遊んだりすることがあります。主に活動日の活動後や休日に行うことが多いです。
                         </p>
                         <ul className={styles.UnorderedList}>
-                            <li>ゲームジャム(プログラミングの勉強会)-&gt;1日という短期間でゲームのプロトタイプを作り、メンバー内で交流します。</li>
+                            <li>ゲームジャム(プログラミングの勉強会)→1日という短期間でゲームのプロトタイプを作り、メンバー内で交流します。</li>
                             <li>マインクラフト(Java版)</li>
                             <li>TRPG(クトゥルフ神話がメイン)</li>
                             <li>ボードゲーム会</li>
-                            <li>競技プログラミング-&gt;不定期ですが、コンテストに参加したり勉強会を開いたりします。</li>
+                            <li>競技プログラミング→不定期ですが、コンテストに参加したり勉強会を開いたりします。</li>
                         </ul>
-                    </div>
-                    <div className={styles.ParagraphMargin}>
+                    </section>
+                    <section className={styles.SectionMargin}>
                         <h2 className={styles.Header}>Welcome!</h2>
                         <hr className={styles.HorizontalLine}></hr>
                         <p>
@@ -154,12 +155,12 @@ export default function About() {
                         </p>
                         <p>
                             いつでも見学・加入を歓迎していますので、ご質問がございましたら、「
-                            <Link className={`${styles.LinkText}`} href={"/contact"}>
+                            <Link className={`${styles.LinkText}`} href={CONTACT_FORM_URL}>
                                 Contact
                             </Link>
                             」ページのお問い合わせフォームにてお問い合わせください！
                         </p>
-                    </div>
+                    </section>
                 </div>
             </main>
         </div>
