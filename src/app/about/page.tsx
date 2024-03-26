@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 import styles from "./page.module.css";
 import SimpleTNPMap from "@/components/map/SimpleTNPMap";
+import { CONTACT_FORM_URL } from "@/consts/CONTACT_FORM_URL";
 
 export default function About() {
 
@@ -18,7 +19,7 @@ export default function About() {
         <div className={styles.Background}>
             <header className={styles.HeaderImage}><span className={styles.HeaderImageText}>秋田大学プログラミングサークル</span></header>
             <main className={styles.About}>
-                <title>{"About"}</title>
+                <title>{"About - 秋田大学プログラミングサークルTNP"}</title>
                 <h1 className={styles.Header}>About</h1>
                 <hr className={styles.HorizontalLine}></hr><br />
                 <div className={styles.BodyText}>
@@ -154,7 +155,7 @@ export default function About() {
                         </p>
                         <p>
                             いつでも見学・加入を歓迎していますので、ご質問がございましたら、「
-                            <Link className={`${styles.LinkText}`} href={"/contact"}>
+                            <Link className={`${styles.LinkText}`} href={CONTACT_FORM_URL}>
                                 Contact
                             </Link>
                             」ページのお問い合わせフォームにてお問い合わせください！

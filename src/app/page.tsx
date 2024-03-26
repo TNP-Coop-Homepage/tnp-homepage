@@ -1,8 +1,11 @@
+import Link from "next/link"
 import styles from "./page.module.css"
+import { CONTACT_FORM_URL } from "@/consts/CONTACT_FORM_URL"
 export default async function Home() {
     return <div className={styles.body}>
                 <header className={styles.header}><span className={styles.text_header}>秋田大学プログラミングサークル</span></header>
                 <main className={styles.main}>
+                    <title>{"秋田大学プログラミングサークルTNP"}</title>
                     <h1 className={styles.hs}>ようこそ</h1>
                     <p className={styles.p_first}>
                         <strong>『秋田大学プログラミングサークルTNP』</strong>は秋田大学公認のプログラミング&創作サークルです。
@@ -63,8 +66,7 @@ export default async function Home() {
                     <p>
                         活動見学はいつでも大歓迎です！ぜひいつでもいらしてください。
                         <br />
-                        何か質問などがございましたら、「<a href="/contact">Contact</a>」よりご連絡ください。
-                        <br />
+                        何か質問などがございましたら、「<Link href={CONTACT_FORM_URL}>Contact</Link>」よりご連絡ください。
                     </p>
                 </main>
             </div>

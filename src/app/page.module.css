@@ -3,8 +3,9 @@
 }
 .header{
     box-sizing: border-box;
-    background-image: none;
-    background-color: aliceblue;
+    background-image: url(/TNPheader.webp);
+    background-size: cover;
+    background-position: center;
     /*あとでヘッダー画像をここにつける*/
     /*50:21*/
     width: 100%;
@@ -17,7 +18,7 @@
 }
 .text_header{
     margin-left: 2rem;
-    color:red;
+    color:rgba(46, 44, 44, 0.705);
     font-size: x-large;
 }
 
@@ -53,4 +54,10 @@
 }
 .main .p_first{
     margin-left: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    .hs {
+        border-bottom: 1px solid #666666;
+    }
 }

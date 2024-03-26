@@ -42,8 +42,15 @@
     width: 28px;
     height: 28px;
     padding: 2px;
+    filter: brightness(0);
 }
 
 .X:hover {
     background-color: #aad350;
+}
+
+@media (prefers-color-scheme: dark) {
+    .X {
+        filter: none;
+    }
 }

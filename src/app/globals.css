@@ -1,5 +1,5 @@
 :root {
-  --background-rgb: #EAF4D3;
+  --background-rgb: rgb(249, 249, 249);
   --primary-accent-rgb: #556A28;
   --primary-text-rgb: #1A1A1A;
   --secondary-accent-rgb: #AAD350;
@@ -25,6 +25,10 @@ body {
   display: flex;
 }
 
+p, ul {
+  line-height: 1.7;
+}
+
 a {
   color: blue;
   text-decoration: none;
@@ -34,9 +38,12 @@ a {
   html {
     color-scheme: dark;
   }
+
+  a {
+    color: #7799ff;
+  }
 }
 
 .children {
   flex-grow: 1;
 }
-

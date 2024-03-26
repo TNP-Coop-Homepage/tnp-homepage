@@ -1,4 +1,4 @@
-.WorkIntroduction {
+.Works {
     padding: 2%;
     width: 100%;
     max-width: 60rem;
@@ -7,13 +7,14 @@
 }
 
 .Background {
-    background-color: rgb(249, 249, 249);
+    width: 100%;
 }
 
 .HeaderImage {
     box-sizing: border-box;
-    background-image: none;
-    background-color: aliceblue;
+    background-image: url(/TNPheader.webp);
+    background-size: cover;
+    background-position: center;
     /*あとでヘッダー画像をここにつける*/
     /*50:21*/
     width: 100%;
@@ -27,7 +28,7 @@
 
 .HeaderImageText {
     margin-left: 2rem;
-    color: red !important;
+    color: rgba(46, 44, 44, 0.705);
     font-size: x-large;
 }
 
