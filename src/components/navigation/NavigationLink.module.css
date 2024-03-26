@@ -6,10 +6,10 @@
 }
 
 .NavigationLink {
-    color: var(--background-rgb);
+    color: var(--primary-accent-rgb);
 }
 
 .NavigationLinkSelected {
-    color: var(--primary-accent-rgb);
-    background: var(--background-rgb);
+    color: var(--background-rgb);
+    background: var(--primary-accent-rgb);
 }
