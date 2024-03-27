@@ -1,5 +1,5 @@
 .Navigation {
-    background: var(--primary-accent-rgb);
+    background: var(--background-rgb);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9,7 +9,7 @@
     z-index: 100;
     top: 0;
     padding: 3rem;
-    color: var(--background-rgb);
+    color: var(--primary-accent-rgb);
     overflow: hidden;
 }
 
@@ -22,6 +22,12 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+}
+
+.NavigationBottom {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 .Logo {
@@ -38,11 +44,22 @@
     flex-direction: column;
     gap: .5rem;
 }
-.X{
+
+.X {
+    width: 28px;
+    height: 28px;
     padding: 2px;
+    filter: brightness(0);
 }
-.X:hover{
+
+.X:hover {
     background-color: #aad350;
+}
+
+@media (prefers-color-scheme: dark) {
+    .X {
+        filter: none;
+    }
 }
 
 @media (max-width: 28em) {
