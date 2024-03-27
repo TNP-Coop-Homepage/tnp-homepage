@@ -3,6 +3,7 @@
     font-weight: bold;
     padding: .75rem;
     border-radius: .75rem;
+    text-decoration: none;
 }
 
 .NavigationLink {
