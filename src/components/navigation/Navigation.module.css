@@ -5,10 +5,17 @@
     justify-content: space-between;
     position: sticky;
     height: 100vh;
-    width: max-content;
+    min-width: max-content;
+    z-index: 100;
     top: 0;
     padding: 3rem;
     color: var(--background-rgb);
+    overflow: hidden;
+}
+
+.NavigationClose {
+    display: none;
+    user-select: none;
 }
 
 .NavigationTop {
@@ -36,4 +43,27 @@
 }
 .X:hover{
     background-color: #aad350;
+}
+
+@media (max-width: 28em) {
+    .Navigation {
+        width: 100vw;
+        position: fixed;
+        user-select: none;
+        transform: translateX(-100%);
+        transition: cubic-bezier(0.15, 0.7, 0.2, 1) .8s;
+    }
+
+    .NavigationOpen {
+        transform: translateX(0);
+    }
+
+    .NavigationClose {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        margin: 2em;
+        top: 0;
+        right: 0;
+    }
 }

@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/navigation/Navigation";
+import Header from "@/components/header/Header";
+import React from "react";
+import {NavigationOpenProvider} from "@/contexts/NavigationOpenContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +20,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
-        <Navigation />
-        <div className={"children"}>
-            {children}
-        </div>
-      </body>
+      <NavigationOpenProvider>
+        <body className={`${inter.className}`}>
+          <Header/>
+          <div className={"body-inner"}>
+            <Navigation/>
+            <div className={"children"}>
+              {children}
+            </div>
+          </div>
+        </body>
+      </NavigationOpenProvider>
     </html>
   );
 }
