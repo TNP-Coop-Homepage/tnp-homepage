@@ -7,6 +7,20 @@
     "name": "秋田大学プログラミングサークルTNP",
     "short_name": "TNP",
     "id": "/",
+    "screenshots": [
+        {
+            "src": "/site/screenshots/screenshot-square.webp",
+            "type": "image/webp",
+            "sizes": "720x720",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/site/screenshots/screenshot-wide.webp",
+            "type": "image/webp",
+            "sizes": "1002x720",
+            "form_factor": "wide"
+        }
+    ],
     "icons": [
         {
             "src": "/icon/app/app_icon-192x192.png",
