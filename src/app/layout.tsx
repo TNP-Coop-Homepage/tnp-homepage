@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "秋田大学プログラミングサークルTNP",
-  description: "『秋田大学プログラミングサークルTNP』の公式サイトです。\n活動風景や作品一覧などを掲載しています。\nまた、一部の作品をWeb上で遊ぶこともできます。",
+  description: "『秋田大学プログラミングサークルTNP』の公式サイトです。活動風景や作品一覧などを掲載しています。\nまた、一部の作品をWeb上で遊ぶこともできます。",
 };
 
 export default function RootLayout({

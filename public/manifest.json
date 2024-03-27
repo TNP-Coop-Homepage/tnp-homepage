@@ -5,6 +5,7 @@
     "scope": "/",
     "start_url": "/",
     "name": "秋田大学プログラミングサークルTNP",
+    "description": "『秋田大学プログラミングサークルTNP』の公式サイトです。活動風景や作品一覧などを掲載しています。\nまた、一部の作品をWeb上で遊ぶこともできます。",
     "short_name": "TNP",
     "id": "/",
     "screenshots": [
