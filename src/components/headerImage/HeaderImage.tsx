@@ -8,7 +8,7 @@ export default function HeaderImage() {
       objectFit: "cover",
       width: "100%",
       height: "100%",
-    }} priority={false} sizes="100vw"/>
+    }} sizes="100vw" placeholder="blur" priority/>
     <div className={styles.HeaderImageOverlay}>
       <p className={styles.HeaderImageText}>秋田大学プログラミングサークル</p>
     </div>
