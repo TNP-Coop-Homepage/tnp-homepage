@@ -4,11 +4,12 @@ import styles from "./page.module.css";
 import WorksElement from "@/components/worksElement/WorksElement";
 import { works } from "./WORK_CONTENTS";
 import { CONTACT_FORM_URL } from "@/consts/CONTACT_FORM_URL";
+import HeaderImage from "@/components/headerImage/HeaderImage";
 
 export default function Works() {
     return (
         <div className={styles.Background}>
-            <header className={styles.HeaderImage}><span className={styles.HeaderImageText}>秋田大学プログラミングサークル</span></header>
+            <HeaderImage />
             <main className={styles.Works}>
                 <title>{"Works - 秋田大学プログラミングサークルTNP"}</title>
                 <h1 className={styles.Header}>Works</h1>

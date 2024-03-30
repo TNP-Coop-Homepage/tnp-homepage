@@ -1,9 +1,11 @@
 import Link from "next/link"
 import styles from "./page.module.css"
 import { CONTACT_FORM_URL } from "@/consts/CONTACT_FORM_URL"
+import HeaderImage from "@/components/headerImage/HeaderImage"
+
 export default async function Home() {
     return <div className={styles.body}>
-                <header className={styles.header}><span className={styles.text_header}>秋田大学プログラミングサークル</span></header>
+                <HeaderImage />
                 <main className={styles.main}>
                     <title>{"秋田大学プログラミングサークルTNP"}</title>
                     <h1 className={styles.hs}>ようこそ</h1>
