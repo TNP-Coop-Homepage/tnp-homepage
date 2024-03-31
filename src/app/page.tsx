@@ -62,7 +62,7 @@ export default async function Home() {
                     <p>
                         TNPは少し個性の強いオタクがかなり多いですが、とてもアットホームな環境で、似た趣味を持つ人、同じ方向性で創作に臨む人がいると思います。
                         <br />
-                        今までのメンバーの創作物や活動実績は 「<a href="/about">About</a>」ページで確認したり、「<a href="/gamecenter">GameCenter</a>」ページで遊んだりすることができます。
+                        TNPの詳しい活動内容は「<a href="/about">About</a>」ページで見ることができ、「<a href="/works">Works</a>」ページでは過去の創作物を見ることができます。
                         <br />
                     </p>
                     <p>
