@@ -32,6 +32,7 @@ const Navigation = () => {
                     <NavigationPageLink title={"Works"} selected={pathname === "/works"} url={"/works"} />
                     <NavigationExternalLink title={"Contact"} url={CONTACT_FORM_URL} />
                 </div>
+                <span className={styles.Scrollable}>\スクロールできるよ/</span>
             </div>
             <div className={styles.NavigationBottom}>
                 <a href="https://twitter.com/tnp_akita">

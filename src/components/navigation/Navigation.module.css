@@ -20,8 +20,10 @@
 
 .NavigationTop {
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: 3rem;
+    min-height: 0;
 }
 
 .NavigationBottom {
@@ -44,6 +46,9 @@
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    overflow-y: auto;
+    min-height: 0;
+    flex: 1;
 }
 
 .X {
@@ -57,13 +62,27 @@
     background-color: #aad350;
 }
 
+.Scrollable {
+    display: none;
+    position: absolute;
+    top: 72px;
+    right: 0;
+    font-size: .8rem;
+}
+
 @media (prefers-color-scheme: dark) {
     .X {
         filter: none;
     }
 }
 
-@media (max-width: 28em) {
+@media (max-height:540px) {
+    .Scrollable {
+        display: inline;
+    }
+}
+
+@media (max-width: 784px) {
     .Navigation {
         width: 100vw;
         position: fixed;
@@ -83,5 +102,13 @@
         margin: 2em;
         top: 0;
         right: 0;
+    }
+    
+    .NavigationTop {
+        gap: 1.5rem;
+    }
+
+    .Logo {
+        width: 12rem;
     }
 }
