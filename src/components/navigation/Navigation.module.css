@@ -5,22 +5,32 @@
     justify-content: space-between;
     position: sticky;
     height: 100vh;
-    width: max-content;
+    min-width: max-content;
+    z-index: 100;
     top: 0;
     padding: 3rem;
     color: var(--primary-accent-rgb);
+    overflow: hidden;
+}
+
+.NavigationClose {
+    display: none;
+    user-select: none;
 }
 
 .NavigationTop {
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: 3rem;
+    min-height: 0;
 }
 
 .NavigationBottom {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    padding-top: 1rem;
 }
 
 .Logo {
@@ -36,6 +46,9 @@
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    overflow-y: auto;
+    min-height: 0;
+    flex: 1;
 }
 
 .X {
@@ -49,8 +62,53 @@
     background-color: #aad350;
 }
 
+.Scrollable {
+    display: none;
+    position: absolute;
+    top: 72px;
+    right: 0;
+    font-size: .8rem;
+}
+
 @media (prefers-color-scheme: dark) {
     .X {
         filter: none;
+    }
+}
+
+@media (max-height:540px) {
+    .Scrollable {
+        display: inline;
+    }
+}
+
+@media (max-width: 784px) {
+    .Navigation {
+        width: 100vw;
+        position: fixed;
+        user-select: none;
+        transform: translateX(-100%);
+        transition: cubic-bezier(0.15, 0.7, 0.2, 1) .8s;
+    }
+
+    .NavigationOpen {
+        transform: translateX(0);
+    }
+
+    .NavigationClose {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        margin: 2em;
+        top: 0;
+        right: 0;
+    }
+    
+    .NavigationTop {
+        gap: 1.5rem;
+    }
+
+    .Logo {
+        width: 12rem;
     }
 }

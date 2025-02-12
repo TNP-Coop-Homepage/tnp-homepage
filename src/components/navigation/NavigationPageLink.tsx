@@ -1,5 +1,6 @@
 import styles from './NavigationLink.module.css';
 import Link from "next/link";
+import {useNavigationOpen} from "@/contexts/NavigationOpenContext";
 
 type Props = {
     title: string,
@@ -8,8 +9,11 @@ type Props = {
 };
 
 const NavigationPageLink = ({title, selected, url}: Props) => {
+
+    const { toggleOpen } = useNavigationOpen();
+
     return (
-        <Link className={`${styles.NavigationLinkBase} ${selected ? styles.NavigationLinkSelected : styles.NavigationLink}`} href={url}>
+        <Link onClick={toggleOpen} className={`${styles.NavigationLinkBase} ${selected ? styles.NavigationLinkSelected : styles.NavigationLink}`} href={url}>
             {title}
         </Link>
     );
