@@ -30,22 +30,31 @@ body {
   display: flex;
 }
 
+body {
+  background-color: #ffffff;
+}
+
 p, ul {
   line-height: 1.7;
 }
 
 a {
+  text-decoration: underline;
   color: blue;
-  text-decoration: none;
 }
+
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 
+  body {
+    background-color: #0c0c0c;
+  }
+
   a {
-    color: #7799ff;
+    color: #7a9eff;
   }
 }
 
