@@ -1,13 +1,15 @@
 :root {
   --background-rgb: rgb(249, 249, 249);
-  --primary-accent-rgb: #556A28;
+  --secondary-background-rgb: hwb(78 71% 3%);
+  --primary-accent-rgb: #616d48;
   --primary-text-rgb: #1A1A1A;
   --secondary-accent-rgb: #AAD350;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-rgb: #556A28;
+    --background-rgb: #616d48;
+    --secondary-background-rgb: #889669;
     --primary-accent-rgb: #EAF4D3;
     --primary-text-rgb: #FFFFFF;
   }
@@ -22,7 +24,14 @@
 html,
 body {
   width: 100%;
+}
+
+.body-inner {
   display: flex;
+}
+
+body {
+  background-color: #ffffff;
 }
 
 p, ul {
@@ -30,17 +39,22 @@ p, ul {
 }
 
 a {
+  text-decoration: underline;
   color: blue;
-  text-decoration: none;
 }
+
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 
+  body {
+    background-color: #0c0c0c;
+  }
+
   a {
-    color: #7799ff;
+    color: #7a9eff;
   }
 }
 

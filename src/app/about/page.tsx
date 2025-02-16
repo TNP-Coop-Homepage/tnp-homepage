@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import styles from "./page.module.css";
 import SimpleTNPMap from "@/components/map/SimpleTNPMap";
 import { CONTACT_FORM_URL } from "@/consts/CONTACT_FORM_URL";
+import HeaderImage from "@/components/headerImage/HeaderImage";
 
 export default function About() {
 
@@ -17,7 +18,7 @@ export default function About() {
 
     return (
         <div className={styles.Background}>
-            <header className={styles.HeaderImage}><span className={styles.HeaderImageText}>秋田大学プログラミングサークル</span></header>
+            <HeaderImage />
             <main className={styles.About}>
                 <title>{"About - 秋田大学プログラミングサークルTNP"}</title>
                 <h1 className={styles.Header}>About</h1>
