@@ -1,0 +1,50 @@
+{
+    "theme_color": "#AAD350",
+    "background_color": "#556A28",
+    "display": "minimal-ui",
+    "scope": "/",
+    "start_url": "/",
+    "name": "秋田大学プログラミングサークルTNP",
+    "description": "『秋田大学プログラミングサークルTNP』の公式サイトです。活動風景や作品一覧などを掲載しています。\nまた、一部の作品をWeb上で遊ぶこともできます。",
+    "short_name": "TNP",
+    "id": "/",
+    "screenshots": [
+        {
+            "src": "/site/screenshots/screenshot-square.webp",
+            "type": "image/webp",
+            "sizes": "720x720",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/site/screenshots/screenshot-wide.webp",
+            "type": "image/webp",
+            "sizes": "1002x720",
+            "form_factor": "wide"
+        }
+    ],
+    "icons": [
+        {
+            "src": "/icon/app/app_icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/icon/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon/app/app_icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/icon/app/app_icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
