@@ -1,0 +1,166 @@
+.container {
+  background: #ffffff;
+  border: 1px solid #e0e6ed;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.clearButton {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clearButton:hover {
+  background: #c53030;
+}
+
+.toggleButton {
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #4a5568;
+  transition: all 0.2s ease;
+}
+
+.toggleButton:hover {
+  background: #edf2f7;
+  border-color: #cbd5e0;
+}
+
+.selectedTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f0f9ff;
+  border-radius: 8px;
+  border: 1px solid #bae6fd;
+}
+
+.selectedLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0369a1;
+  margin-right: 4px;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-bottom: 4rem;
+}
+
+.tagList.expanded {
+  max-height: none;
+}
+
+.tag {
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.tag:hover {
+  background: #edffc3;
+  border-color: #c1ec64;
+}
+
+.selectedTag {
+  background: #99b758;
+  color: white;
+  border-color: #88a549;
+}
+
+.selectedTag:hover {
+  background: #809a49;
+  border-color: #748c42;
+}
+
+.removeIcon {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.resultCount {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #718096;
+  text-align: center;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 16px;
+  }
+  
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .controls {
+    align-self: flex-end;
+  }
+  
+  .selectedTags {
+    padding: 10px;
+  }
+  
+  .tag {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+}

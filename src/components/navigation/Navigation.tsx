@@ -28,7 +28,7 @@ const Navigation = () => {
                 <div className={styles.Links}>
                     <NavigationPageLink title={"Home"} selected={pathname === "/"} url={"/"} />
                     <NavigationPageLink title={"About"} selected={pathname === "/about"} url={"/about"} />
-                    <NavigationExternalLink title={"Blog"} url={"http://akitatnp.wp.xdomain.jp/"} />
+                    <NavigationPageLink title={"Blog"} selected={pathname === "/blog" || pathname.startsWith("/blog/")} url={"/blog"} />
                     <NavigationPageLink title={"Works"} selected={pathname === "/works"} url={"/works"} />
                     <NavigationExternalLink title={"Contact"} url={CONTACT_FORM_URL} />
                 </div>
