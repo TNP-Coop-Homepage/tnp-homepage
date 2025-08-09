@@ -84,6 +84,7 @@
   border-radius: 16px;
   font-size: 0.9rem;
   font-weight: 500;
+  text-box-trim: trim-both;
 }
 
 .content {

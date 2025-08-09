@@ -4,11 +4,7 @@ import nextPWA from "next-pwa";
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: [
-      "nicovideo.cdn.nimg.jp",
-      "cdn.discordapp.com",
-      "media.discordapp.net",
-    ],
+    domains: ["nicovideo.cdn.nimg.jp", "media.discordapp.net"],
   },
   async rewrites() {
     return [
