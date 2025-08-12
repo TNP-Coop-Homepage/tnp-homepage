@@ -1,8 +1,10 @@
+@import 'highlight.js/styles/atom-one-dark.css';
+
 :root {
   --background-rgb: rgb(249, 249, 249);
   --secondary-background-rgb: hwb(78 71% 3%);
   --primary-accent-rgb: #616d48;
-  --primary-text-rgb: #1A1A1A;
+  --primary-text-rgb: #343434;
   --secondary-accent-rgb: #AAD350;
 }
 
@@ -19,6 +21,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: var(--primary-text-rgb);
 }
 
 html,
@@ -34,15 +37,15 @@ body {
   background-color: #ffffff;
 }
 
-p, ul {
-  line-height: 1.7;
-}
-
 a {
   text-decoration: underline;
-  color: blue;
+  font-weight: bold;
+  color: var(--secondary-accent-rgb);
 }
 
+a:visited {
+  color: var(--primary-accent-rgb);
+}
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -60,4 +63,100 @@ a {
 
 .children {
   flex-grow: 1;
+}
+
+
+.main{
+  width: 100%;
+  max-width: 60rem;
+  margin: 2rem auto;
+  box-sizing: border-box;
+}
+
+.main p,
+.main .level-1 p,
+.main .level-2 p,
+.main .level-3 p {
+  margin: 1rem 2rem 1rem;
+  line-height: 1.7;
+}
+
+.main ul,
+.main .level-1 ul,
+.main .level-2 ul,
+.main .level-3 ul {
+  margin: 1rem 2rem 1rem;
+  line-height: 1.7;
+}
+
+
+.main .level-1 p { margin-left: 2rem; }
+.main .level-1 ul { margin-left: 3rem; }
+
+.main .level-2 p { margin-left: 3rem; }
+.main .level-2 ul { margin-left: 4rem; }
+
+.main .level-3 p { margin-left: 4rem; }
+.main .level-3 ul { margin-left: 5rem; }
+
+
+.main p { margin-left: 3rem; }
+.main ul { margin-left: 5rem; }
+
+.main h1.hs,
+.main h2.hs,
+.main h3.hs {
+  box-sizing: border-box;
+  border-left: solid #788952;
+  padding: 0.5rem 1rem 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.main h1.hs {
+  border-bottom: 2px solid var(--primary-text-rgb);
+  border-left-width: 12px;
+  padding-left: 12px;
+  margin-left: 1rem;
+  line-height: 3rem;
+  font-size: 2rem;
+}
+
+.main h2.hs {
+  border-bottom: 1px solid var(--primary-text-rgb);
+  border-left-width: 8px;
+  padding-left: 10px;
+  margin-left: 2rem;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.main h3.hs {
+  border-bottom: 1px solid #999999;
+  border-left-width: 6px;
+  padding-left: 8px;
+  margin-left: 3rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.TNP{
+  margin-left: 3rem;
+}
+.main .p_first{
+  margin-left: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .main h1.hs {
+      border-bottom: 2px solid #666666;
+  }
+  
+  .main h2.hs {
+      border-bottom: 1px solid #666666;
+  }
+  
+  .main h3.hs {
+      border-bottom: 1px solid #555555;
+  }
 }
